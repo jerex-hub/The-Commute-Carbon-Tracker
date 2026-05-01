@@ -46,7 +46,21 @@
             <h1>Commute Carbon Tracker</h1>
             <div>
                 <input type="number" id="distance" placeholder="Enter distance (km)">
+                <div>
+                    <button onclick="decreaseDistance()">-</button>
+                    <button onclick="increaseDistance()">+</button>
+                </div>
+                <select id="mode">
+                    <option value="car">Car</option>
+                    <option value="bus">Bus</option>
+                    <option value="bike">Bike</option>
+                    <option value="walk">Walk</option>
+                </select>
+                
+                <button onclick="logTrip()">Log Commute</button>
+                <button onclick="goHome()">Back Home</button>
             </div>
+            
         </div>
     </div>
 
