@@ -94,3 +94,25 @@ li {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
+#todayResult, #weeklyTotal {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #166534;
+    margin-top: 15-px;
+}
+
+.distance-control {
+    margin: 20px 0;
+}
+
+.zoom-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.zoom-buttons button {
+    width: 60px;
+    font-size: 22px;
+    font-weight: bold;
+}
