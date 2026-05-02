@@ -47,3 +47,16 @@ button:hover {
     background: #15803d;
     transform: scale(1.03);
 }
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3 ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
