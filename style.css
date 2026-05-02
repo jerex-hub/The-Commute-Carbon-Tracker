@@ -12,3 +12,10 @@ body {
     padding: 40px 20px;
     text-align: center;
 }
+
+h1 {
+    font-size: 3rem;
+    color: #14532d;
+    margin-bottom: 15px;
+}
+
