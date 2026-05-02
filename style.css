@@ -4,3 +4,11 @@ body {
     min-height: 100vh;
     color: #222;
 }
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
