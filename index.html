@@ -52,10 +52,13 @@
       <h1>Commute Carbon Tracker</h1>
       <div>
         <input type="number" id="distance" placeholder="Enter distance (km)" />
-        <div>
-          <button onclick="decreaseDistance()">-</button>
-          <button onclick="increaseDistance()">+</button>
+        
+        <div class="slider-container">
+
+          <input type="range" min="0" max="100" value="20" id="mySlider" class="slider">
+          <p><span id="sliderValue">20</span>km</p>
         </div>
+        
         <select id="mode">
           <option value="car">Car</option>
           <option value="bus">Bus</option>

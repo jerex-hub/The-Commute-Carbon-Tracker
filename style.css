@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 50%;
     max-width: 900px;
     margin: auto;
     padding: 40px 20px;
@@ -36,7 +36,7 @@ p {
 }
 
 button {
-    width: 100%;
+    width: 50%;
     padding: 14px;
     margin: 12px 0;
     border: none;
@@ -60,7 +60,7 @@ button:hover {
     margin: 20px 0;
     border-radius: 18px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-    transition: transform 0.3 ease;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -98,7 +98,7 @@ li {
     font-size: 1.2rem;
     font-weight: bold;
     color: #166534;
-    margin-top: 15-px;
+    margin-top: 15px;
 }
 
 .distance-control {
@@ -115,4 +115,10 @@ li {
     width: 60px;
     font-size: 22px;
     font-weight: bold;
+}
+
+#sliderValue {
+    font-weight: bold;
+    color: #16a34a;
+    font-size: 18px;
 }
