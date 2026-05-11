@@ -110,3 +110,28 @@ function decreaseDistance() {
         distance.value = current - 1;
     }
 }
+
+const slider = document.getElementById("mySlider");
+const sliderValue = document.getElementById("sliderValue");
+const distanceInput = document.getElementById("distance");
+
+function updateSlider() {
+    sliderValue.textContent = slider.value;
+    distanceInput.value = slider.value;
+
+    const value = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+
+    slider.style.background =
+        `linear-gradient(90deg, #16a34a ${value}%, #e5e7eb ${value}%)`;
+}
+
+slider.addEventListener("input", updateSlider);
+
+// if user types manually
+distanceInput.addEventListener("input", function () {
+    slider.value = this.value;
+    updateSlider();
+});
+
+// run when page loads
+updateSlider();
