@@ -1,124 +1,172 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #d4fc79, #96e6a1);
-    min-height: 100vh;
-    color: #222;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+  min-height: 100vh;
+  color: #222;
 }
 
 .container {
-    width: 50%;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
+  width: 50%;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 h1 {
-    font-size: 3rem;
-    color: #14532d;
-    margin-bottom: 15px;
+  font-size: 3rem;
+  color: #14532d;
+  margin-bottom: 15px;
 }
 
 h2 {
-    color: #166534;
-    margin-bottom: 10px;
+  color: #166534;
+  margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
 }
 
 button {
-    width: 50%;
-    padding: 14px;
-    margin: 12px 0;
-    border: none;
-    border-radius: 12px;
-    background: #16a34a;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3;
+  width: 50%;
+  padding: 14px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 12px;
+  background: #16a34a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3;
 }
 
 button:hover {
-    background: #15803d;
-    transform: scale(1.03);
+  background: #15803d;
+  transform: scale(1.03);
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-    transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
-input, select{
-    width: 100%;
-    padding: 14px;
-    margin: 12px 0;
-    border-radius: 12px;
-    border: 2px solid #bbf7d0;
-    font-size: 16px;
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: 2px solid #bbf7d0;
+  font-size: 16px;
 }
 
-input:focus, select:focus {
-    outline: none;
-    border-color: #16a34a;
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #16a34a;
 }
 
 ul {
-    list-style: none;
-    margin-top: 20px;
+  list-style: none;
+  margin-top: 20px;
 }
 
 li {
-    background: white;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-#todayResult, #weeklyTotal {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #166534;
-    margin-top: 15px;
+#todayResult,
+#weeklyTotal {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #166534;
+  margin-top: 15px;
 }
 
 .distance-control {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .zoom-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .zoom-buttons button {
-    width: 60px;
-    font-size: 22px;
-    font-weight: bold;
+  width: 60px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.slider-container {
+  padding: 6px 0;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #16a34a 20%, #e5e7eb 20%);
+  outline: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #16a34a;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #16a34a;
+}
+
+.slider-container p {
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 #sliderValue {
-    font-weight: bold;
-    color: #16a34a;
-    font-size: 18px;
+  font-size: 18px;
+  color: #16a34a;
+  font-weight: bolder;
+}
+
+.unit {
+  font-size: 18px;
+  color: #16a34a;
+  font-weight: bolder;
 }
