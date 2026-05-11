@@ -50,3 +50,63 @@ function logTrip() {
 
     document.getElementById("distance").value = "";
 }
+
+function updateWeekly() {
+    let total = 0;
+    const tripList = document.getElementById("tripList");
+
+    tripList.innerHTML = "";
+
+    trips.forEach(function(trip, index) {
+        total += trip.saved;
+
+        const li = document.createElement("li");
+        li.innerText =
+            (index + 1) + ". " +
+            trip.mode.toUpperCase() +
+            " - " +
+            trip.distance +
+            " km → Saved " +
+            trip.saved.toFixed(2) +
+            " kg CO2";
+
+        tripList.appendChild(li);
+    });
+
+    document.getElementById("weeklyTotal").innerText =
+        total.toFixed(2) + " kg CO2";
+
+    document.getElementById("tripCount").innerHTML =
+        "🚗 Car: " + tripCounts.car + "<br>" +
+        "🚌 Bus: " + tripCounts.bus + "<br>" +
+        "🚴 Bike: " + tripCounts.bike + "<br>" +
+        "🚶 Walk: " + tripCounts.walk;
+
+    const tips = [
+        "🚴 Bike once a week to cut emissions.",
+        "🚶 Walking short distances saves fuel.",
+        "🚌 Public transport reduces traffic pollution.",
+        "🌍 Small daily choices create big environmental impact.",
+        "♻️ Consistency matters more than perfection."
+    ];
+
+    const randomTip =
+        Math.floor(Math.random() * tips.length);
+
+    document.getElementById("ecoTip").innerText =
+        tips[randomTip];
+}
+function increaseDistance() {
+    let distance = document.getElementById("distance");
+    distance.value = (parseFloat(distance.value) || 0) + 1;
+}
+
+function decreaseDistance() {
+    let distance = document.getElementById("distance");
+
+    let current = parseFloat(distance.value) || 0;
+
+    if (current > 0) {
+        distance.value = current - 1;
+    }
+}
