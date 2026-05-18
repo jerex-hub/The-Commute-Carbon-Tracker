@@ -10,12 +10,12 @@
     <div id="homePage">
       <div class="container">
         <section class="hero">
-          <h1>EcoCommute</h1>
+          <h1>🌱 EcoCommute Tracker</h1>
           <p>
             Track your commute, reduce carbon emissions, and build greener
             future.
           </p>
-          <button onclick="showTracker()">Start Clicking</button>
+          <button onclick="showTracker()">Start Tracking</button>
         </section>
 
         <section class="card">
@@ -28,17 +28,17 @@
 
         <div class="feature-grid">
           <div class="card">
-            <h2>Environmental Awareness</h2>
+            <h2>🌍 Environmental Awareness</h2>
             <p>Understanding how your travel choices impact the planet.</p>
           </div>
 
           <div class="card">
-            <h2>Personalized Insights</h2>
+            <h2>📊 Personalized Insights</h2>
             <p>Get data-driven results from your own commute habits.</p>
           </div>
 
           <div class="card">
-            <h2>Actionable Steps</h2>
+            <h2>🚴 Actionable Steps</h2>
             <p>
               Discover ways to lower emissions through simple daily choices.
             </p>
@@ -49,7 +49,7 @@
 
     <div id="trackerPage" style="display: none;">
     <div class="container">
-      <h1>Commute Carbon Tracker</h1>
+      <h1>🌱 Commute Carbon Tracker</h1>
       <div>
         <input type="number" id="distance" placeholder="Enter distance (km)" />
         
@@ -60,10 +60,10 @@
         </div>
         
         <select id="mode">
-          <option value="car">Car</option>
-          <option value="bus">Bus</option>
-          <option value="bike">Bike</option>
-          <option value="walk">Walk</option>
+          <option value="car">🚗 Car</option>
+          <option value="bus">🚌 Bus</option>
+          <option value="bike">🚴 Bike</option>
+          <option value="walk">🚶 Walk</option>
         </select>
 
         <button onclick="logTrip()">Log Commute</button>
@@ -72,13 +72,13 @@
 
       <div class="stats-grid">
         <div class="card">
-          <h2>Todays's Savings</h2>
-          <p id="todayResult">0 kg C02</p>
+          <h2>Today's Savings</h2>
+          <p id="todayResult">0 kg CO<sub>2</sub></p>
         </div>
 
         <div class="card">
           <h2>Weekly Total</h2>
-          <p id="weeklyTotal">0 kg C02</p>
+          <p id="weeklyTotal">0 kg CO<sub>2</sub></p>
         </div>
 
         <div class="card">
@@ -87,16 +87,17 @@
         </div>
 
         <div class="card">
-          <h2>Trip History</h2>
+          <h2>📈 Trip History</h2>
           <ul id="tripList"></ul>
         </div>
 
         <div class="card">
-          <h2>Eco tips</h2>
-          <p id="ecoTip">Bike once a week to significant reduce emissions.</p>
+          <h2>💡 Eco tips</h2>
+          <p id="ecoTip">Bike once a week to significantly reduce emissions.</p>
         </div>
       </div>
     </div>
+  </div>
 
     <script src="script.js"></script>
   </body>
